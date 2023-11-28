@@ -1,0 +1,18 @@
+
+#!/bin/bash
+
+# Author: Anna Perminova
+
+# Date Created: 2023-11-28
+
+# Last Modifed: 2023-11-28
+
+# Description
+# Backup all the files in your home directory and save them all in .tar archive.
+
+# Usage
+# backup_script
+
+tar -cvf ~/bash_script/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
+exit 0
+
